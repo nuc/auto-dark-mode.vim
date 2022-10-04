@@ -22,8 +22,10 @@ end
 func! s:ChangeBackground()
   if (v:os_appearance)
     set background=dark
+    colorscheme dracula
   else 
     set background=light
+    colorscheme hemisu
   endif
   redraw!
 endfunc
